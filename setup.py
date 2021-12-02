@@ -353,7 +353,7 @@ def get_extensions():
 
 
 setup(
-    name='mmcv-full' if os.getenv('MMCV_WITH_OPS', '0') == '0' else 'mmcv-full',
+    name='mmcv' if os.getenv('MMCV_WITH_OPS', '0') == '0' else 'mmcv-full',
     version=get_version(),
     description='OpenMMLab Computer Vision Foundation',
     keywords='computer vision',
